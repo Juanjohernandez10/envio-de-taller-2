@@ -1,4 +1,5 @@
 import os
+os.system('cls')
 codigoInt = int(input('codigo'))
 nombrestr = input('nombre')
 existenciasInt = 0
@@ -10,9 +11,13 @@ while controlBln == True:
     opcionStr = input('1.compras\n2. ventas\n3.reportes\n-> ')
     cantidadInt = int(input('cantidad: '))
     if opcionStr == '1':
-        existenciasInt = cantidadInt
+        existenciasInt += cantidadInt
     if opcionStr =='2':
-        existenciasInt = cantidadInt
+       if cantidadInt <= existenciasInt:
+        existenciasInt -= cantidadInt
+       else:
+        print('no hay suficientes esxistencias ')
+       enter = input('>ENTER<') 
     if opcionStr == '3':
         print('cantidad actual de existencias :',existenciasInt)
     if opcionStr == '4':

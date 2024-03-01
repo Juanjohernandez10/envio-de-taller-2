@@ -1,4 +1,3 @@
-
 import os
 os.system('cls')
 cons_computador_escritorio = 2000000
@@ -49,14 +48,15 @@ while True:
         print("televisor añadido al carrito.")
     os.system('cls')
     if opcion == "5":
-        break  # mejor sistema para poder cerrar el bucle sin colocar false 
-    
-    if opcion != ("1", "2", "3", "4", "5", "6"):
+       break  # mejor sistema para poder cerrar el bucle sin colocar false 
+     
+if opcion != ("1", "2", "3", "4", "5",):
         print("Opción no válida. Intente de nuevo.")
-        
-print(f"\nResumen de la factura:") 
-print(f"Computadores de escritorio: {var_cantidad_computadores_escritorio }")
-print(f"tabletas: {var_cantidad_tabletas}")
-print(f"videobeam: { var_cantidad_videobeams}")
-print(f"televisor: {var_cantidad_televisiones}")
-print(f"Total a pagar: ${var_total_a_pagar}")        
+    
+if opcion == "5":
+        print('\nResumen de la factura:') 
+        print('Computadores de escritorio:' ,var_cantidad_computadores_escritorio)
+        print('tabletas:',var_cantidad_tabletas)
+        print('videobeam:',  var_cantidad_videobeams)
+        print('televisor:', var_cantidad_televisiones)
+        print('Total a pagar $:', var_total_a_pagar)        
